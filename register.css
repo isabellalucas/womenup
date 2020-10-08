@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Ubuntu+Condensed&display=swap');
+:root {
+    --main-blue: rgb(45, 101, 173);
+    --main-orange: rgba(255, 136, 0, 0.959);
+  }
+body{
+background-color: rgba(255, 136, 0, 0.959);;
+}
+main{
+   
+    font-family: 'Rowdies', cursive;
+}
+#profregform{
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+}
+.reg{
+    background-color: val(--main-orange) ;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-blue);
+}
+.reg h1 {
+    text-align: center;
+    border-bottom: solid 10px var(--main-blue);
+}
+.button{
+    align-self: center;
+    justify-self: center;
+    transform: scale(1.5);
+}
+
+
+@media screen and (min-width:800px){
+    #profregform{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .reg{
+        display: grid;
+        grid-template: "title  title" 1fr
+                        "form  img" 3fr /
+                        3fr    2fr;
+        
+        padding: 20px;
+        
+    }
+    .reg h1{
+        grid-area: title;
+        padding-bottom: 20px;
+    }
+    .reg form{
+        grid-area: form;
+    }
+    .reg img{
+        grid-area: img;
+    }
+    
+}

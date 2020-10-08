@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Ubuntu+Condensed&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-blue: rgb(45, 101, 173);
+    --main-orange: rgba(255, 136, 0, 0.959);
+  }
+
+body{
+    background-color: var(--main-blue);
+    font-family: 'Rowdies', cursive;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-blue);
+    background-color: var(--main-orange);
+    width: 100%;
+}
+.order-form h1 {
+    text-align: center;
+    border-bottom: solid 10px var(--main-blue);
+}
+.order-form .button{
+    align-self: center;
+    justify-self: center;
+    transform: scale(1.5);
+    margin-top: 10px;
+}
+.order-form form{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    justify-self: center;
+    padding-bottom: 20px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+}
+.list ul{
+    list-style: none;
+   
+}
+.list li {
+    color: var(--main-orange);
+    text-align:left;
+    border-top: solid 3px var(--main-orange);
+    border-bottom:solid 3px var(--main-orange);
+    padding: 20px;
+    margin: 0px;
+}
+.list h2 {
+    color: var(--main-orange);
+    text-align: center;
+}
+
+@media screen and (min-width:800px){
+    .order-form{
+        display: grid;
+        grid-template: "title  title" 1fr
+                        "form  img" 3fr /
+                        3fr    2fr;
+        
+        padding: 20px;
+        align-items: flex-start;
+        max-width: 1300px;
+    }
+    .order-form h1{
+        grid-area: title;
+        padding-bottom: 20px;
+    }
+    .order-form form{
+        width: 500px;
+        grid-area:form;
+    }
+    .order-form img{
+        grid-area: img;
+        margin-top: -100px;
+        transform: scale(0.8);
+    }
+    .list{
+        width: 60%;
+        max-width: 1300px;
+    }
+}

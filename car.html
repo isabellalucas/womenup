@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomenUp!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="categories.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-logo" href="index.html"><img src="images/logo.png" alt="" id="logo"></a>
+            <ul class="navbar-list">
+                <li >
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li >
+                    <a class="nav-link" href="tech.php">Tech Assistance</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="consulting.php">Consulting</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="car.php">Car Services</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="repairs.php">Domestic Repairs</a>
+                </li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="button-style" > <a href="#rate">Register</a></button>
+                <button  class="button-style" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                  <div class="cust">
+                                    <input type="radio" class="form-check-input" id="customer" name="type" value="customer">
+                                    <label class="form-check-label" for="customer">Customer</label>
+                                    </div> 
+                                    <div class="prof">
+                                  <input type="radio" class="form-check-input" id="professional" name="type" value="professional">
+                                  <label class="form-check-label" for="professinal">Professional</label>
+                                </div> 
+                                </div>
+                                                              
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <!------------------------->
+            </div>                
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="reg order-form">
+            <h1>What do you need:</h1>
+            <form id="order-form" action="" method="post">
+                <div class="form-group">
+                    <label for="cemail">Email</label>
+                    <input type="email" class="form-control" id="cemail" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="category">Select which category do you need</label>
+                    <select class="form-control" id="category" placeholder="">
+                    <option>Tech Assistence</option>
+                    <option>Consulting</option>
+                    <option>Car Services</option>
+                    <option>Domestic Repairs</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bio">Tell us about your work:</label>
+                    <textarea class="form-control" id="bio" rows="5" cols="5" maxlength="400"></textarea>
+                </div>
+                <div class="button">
+                    <button class="button-style btn-lg" type="submit">Submit</button>
+                </div>
+            </form>
+            <img src="images/tech.jpg" alt="">
+        </div>
+        <div class="list">
+            <h2>Car Service Workers:</h2>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <span id="list-name"> Jane Doe </span>
+                    <span id="rating"> 4.5</span> 
+                    <span id="list-name">Number of reviews</span> 
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <span id="list-name"> Jane Doe </span>
+                    <span id="rating"> 4.5 **** </span> 
+                    <span id="list-name">Number of reviews</span>
+                    <span id="list-name">Contact:</span> 
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>WomenUp! Copyright 2020 &copy</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>

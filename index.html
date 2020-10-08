@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomenUp!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-logo" href="index.html"><img src="images/logo.png" alt="" id="logo"></a>
+            <ul class="navbar-list">
+                <li >
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li >
+                    <a class="nav-link" href="tech.html">Tech Assistance</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="consulting.html">Consulting</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="car.html">Car Services</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="repairs.html">Domestic Repairs</a>
+                </li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="button-style" > <a href="#rate">Register</a></button>
+                <button  class="button-style" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                  <div class="cust">
+                                    <input type="radio" class="form-check-input" id="customer" name="type" value="customer">
+                                    <label class="form-check-label" for="customer">Customer</label>
+                                    </div> 
+                                    <div class="prof">
+                                  <input type="radio" class="form-check-input" id="professional" name="type" value="professional">
+                                  <label class="form-check-label" for="professinal">Professional</label>
+                                </div> 
+                                </div>
+                                                              
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <!------------------------->
+            </div>                
+            </div>
+          </nav>
+    </header>
+    <div class="wrapper">
+        <div class="banner">
+            <img src="images/rosie.png" alt="" id="rosie">
+            <div class="card">
+                <h1>Trusted quality services made by Women to Women</h2>
+                <i class="fas fa-tools fa-4x" ></i>
+                <h4>What do you need today?</h4>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="button-style" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+     <!-- -------------------------How it works session--------------------------------- -->
+        <div class="howitworks">
+            <h1>How it works:</h1>
+            <div class="order">
+                <i class="fas fa-desktop fa-7x"></i>
+                <p>1 - Make your order</p>
+            </div>
+            <div class="quotes">
+                <i class="fas fa-money-check-alt fa-7x"></i>
+                <p>2 - Get three quotes</p>
+            </div>
+            <div class="choose">
+                <i class="fas fa-mobile-alt fa-7x" ></i>
+                <p>3 - Choose the best and talk directly</p>
+            </div>
+            <div class="para">
+                <i class="far fa-thumbs-up fa-2x"></i>
+                <p>And don't forget to rate the job!</p>
+            </div>
+        </div>
+        <div class="rate" id="rate">
+            <h1>Join us!</h1>
+            <button class="button-style" ><a href="userregister.html">Sign Up as Customer</a></button>
+            <button class="button-style"><a href="profregister.html">Sign Up as Professional</a></button>
+        </div>
+    </div>
+    <footer>
+        <div class="contactus">
+            <form>
+                <h3>Contact Us!</h3>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput2">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="First and Last name">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+                <button class="button-style" type="submit">Send</button>
+              </form>
+        </div>
+        <div class="socialmedia">
+            <i class="fab fa-facebook-f fa-3x"><a href=""></a></i>
+           <i class="fab fa-twitter fa-3x"> <a href=""></a></i>
+            <i class="fab fa-instagram fa-3x"><a href=""></a></i>
+        </div>
+        <p>WomenUp! Copyright 2020 &copy</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
